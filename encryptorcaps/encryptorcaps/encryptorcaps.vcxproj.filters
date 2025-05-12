@@ -48,9 +48,4 @@
       <Filter>소스 파일\ransomenote</Filter>
     </ClInclude>
   </ItemGroup>
-  <ItemGroup>
-    <Image Include="ransome_wallpaper.bmp">
-      <Filter>소스 파일</Filter>
-    </Image>
-  </ItemGroup>
 </Project>

@@ -2,14 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\geunh\source\repos\encryptorcaps\x64\Debug\encryptorcaps.exe</FullPath>
+      <FullPath>C:\Users\geunh\Desktop\capsrepos\encryptorcaps\x64\Debug\encryptorcaps.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
-  <ContentFiles>
-    <ContentFile>
-      <FullPath>C:\Users\geunh\source\repos\encryptorcaps\encryptorcaps\ransome_wallpaper.bmp</FullPath>
-    </ContentFile>
-  </ContentFiles>
+  <ContentFiles />
   <SatelliteDlls />
   <NonRecipeFileRefs />
 </Project>

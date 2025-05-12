@@ -21,9 +21,15 @@
     <ClCompile Include="decryptor.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="walker.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="decryptor.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="walker.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>
