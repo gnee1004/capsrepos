@@ -1,2 +1,8 @@
-﻿  decryptor.c
+﻿  main_decryptor.c
+C:\Users\geunh\Desktop\capsrepos\decryptorcaps\decryptorcaps\main_decryptor.c(1,9): warning C4005: '_CRT_SECURE_NO_WARNINGS': 매크로 재정의
+      C:\Users\geunh\Desktop\capsrepos\decryptorcaps\decryptorcaps\main_decryptor.c(1,9):
+      이전에 명령줄에서 선언된 '_CRT_SECURE_NO_WARNINGS'
+  
+  walker.c
+  코드를 생성하고 있습니다...
   decryptorcaps.vcxproj -> C:\Users\geunh\Desktop\capsrepos\decryptorcaps\x64\Debug\decryptorcaps.exe

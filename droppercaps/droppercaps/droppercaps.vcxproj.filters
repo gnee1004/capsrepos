@@ -15,12 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dropper.c">
+    <ClCompile Include="..\..\..\..\Downloads\droppercaps-main\droppercaps-main\DropperTemplate\dropper.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\TEST\encryptor_payload.h">
+    <None Include="..\..\encryptorcaps\x64\Debug\encryptorcaps.exe">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="주의사항.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Downloads\droppercaps-main\droppercaps-main\DropperTemplate\dropper.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\droppercaps-main\droppercaps-main\DropperTemplate\resource.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>

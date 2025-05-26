@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\walker.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\encryptor.rc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\encryptor.rc||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\ransomenote.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\ransomenote.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\walker.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\encryptor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -17,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\main_encryptor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\main_encryptor.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2800B533-1EFF-47A8-91F4-56A2FA929454}|encryptorcaps\\encryptorcaps.vcxproj|solutionrelative:encryptorcaps\\walker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +34,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "main_encryptor.c",
-              "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\main_encryptor.c",
-              "RelativeDocumentMoniker": "encryptorcaps\\main_encryptor.c",
-              "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\main_encryptor.c",
-              "RelativeToolTip": "encryptorcaps\\main_encryptor.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-12T08:31:56.899Z",
+              "DocumentIndex": 0,
+              "Title": "encryptor.rc",
+              "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\encryptor.rc",
+              "RelativeDocumentMoniker": "encryptorcaps\\encryptor.rc",
+              "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\encryptor.rc",
+              "RelativeToolTip": "encryptorcaps\\encryptor.rc",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-19T09:05:12.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ransomenote.c",
+              "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\ransomenote.c",
+              "RelativeDocumentMoniker": "encryptorcaps\\ransomenote.c",
+              "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\ransomenote.c",
+              "RelativeToolTip": "encryptorcaps\\ransomenote.c",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAuwG8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-19T08:56:04.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "main_encryptor.c",
+              "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\main_encryptor.c",
+              "RelativeDocumentMoniker": "encryptorcaps\\main_encryptor.c",
+              "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\main_encryptor.c",
+              "RelativeToolTip": "encryptorcaps\\main_encryptor.c",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAuwH8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-12T08:31:56.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "walker.h",
               "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.h",
               "RelativeDocumentMoniker": "encryptorcaps\\walker.h",
@@ -51,34 +84,31 @@
               "RelativeToolTip": "encryptorcaps\\walker.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-12T08:30:52.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "walker.c",
-              "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.c",
-              "RelativeDocumentMoniker": "encryptorcaps\\walker.c",
-              "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.c*",
-              "RelativeToolTip": "encryptorcaps\\walker.c*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAuwGcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-12T06:55:16.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T08:30:52.074Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "walker.c",
+              "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.c",
+              "RelativeDocumentMoniker": "encryptorcaps\\walker.c",
+              "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\walker.c",
+              "RelativeToolTip": "encryptorcaps\\walker.c",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAuwGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-12T06:55:16.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "encryptor.c",
               "DocumentMoniker": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\encryptor.c",
               "RelativeDocumentMoniker": "encryptorcaps\\encryptor.c",
               "ToolTip": "C:\\Users\\geunh\\Desktop\\capsrepos\\encryptorcaps\\encryptorcaps\\encryptor.c",
               "RelativeToolTip": "encryptorcaps\\encryptor.c",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAAAE8AAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-12T06:47:02.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T06:47:02.222Z"
             }
           ]
         }

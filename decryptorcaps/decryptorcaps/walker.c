@@ -1,4 +1,3 @@
-// decryptor_walker.c
 #include <windows.h>
 #include <shlobj.h>
 #include <shlwapi.h>
@@ -12,18 +11,12 @@
 #pragma comment(lib, "Shell32.lib")
 #pragma comment(lib, "Shlwapi.lib")
 
-void log_to_file(const char* msg) {
-    FILE* f = fopen("decrypt_log.txt", "a");
-    if (f) {
-        fprintf(f, "%s\n", msg);
-        fclose(f);
-    }
-}
-
+// 복호화 대상 파일인지 확인
 int is_target_file(const char* filename) {
     return (StrStrIA(filename, ".adr") != NULL);
 }
 
+// 시스템 경로 여부 확인
 int is_system_path(const char* path) {
     return (
         StrStrIA(path, "\\Windows\\") ||
@@ -32,6 +25,7 @@ int is_system_path(const char* path) {
         );
 }
 
+// 지정된 디렉토리 내 재귀적 복호화 수행
 int scan_and_decrypt(const char* dir, const unsigned char* key, const unsigned char* iv) {
     int success = 0;
     if (is_system_path(dir)) return 0;
@@ -54,9 +48,6 @@ int scan_and_decrypt(const char* dir, const unsigned char* key, const unsigned c
         }
         else {
             if (is_target_file(fd.cFileName)) {
-                char buf[512];
-                snprintf(buf, sizeof(buf), "[DECRYPT] 시도: %s", fullpath);
-                log_to_file(buf);
                 if (decrypt_file(fullpath, key, iv)) {
                     success++;
                 }
@@ -68,6 +59,7 @@ int scan_and_decrypt(const char* dir, const unsigned char* key, const unsigned c
     return success;
 }
 
+// 주요 사용자 폴더 및 현재 폴더 복호화 수행
 int decrypt_all_files() {
     unsigned char key[32], iv[16];
     restore_key(key);
@@ -87,6 +79,7 @@ int decrypt_all_files() {
         }
     }
 
+    // Downloads 폴더 복호화
     PWSTR wpath = NULL;
     if (SHGetKnownFolderPath(&FOLDERID_Downloads, 0, NULL, &wpath) == S_OK) {
         wcstombs(path, wpath, MAX_PATH);
@@ -94,9 +87,9 @@ int decrypt_all_files() {
         CoTaskMemFree(wpath);
     }
 
+    // 현재 폴더 복호화
     GetCurrentDirectoryA(MAX_PATH, path);
     total_success += scan_and_decrypt(path, key, iv);
 
     return total_success;
 }
-

@@ -19,10 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dropper.c" />
+    <ClCompile Include="..\..\..\..\Downloads\droppercaps-main\droppercaps-main\DropperTemplate\dropper.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Desktop\TEST\encryptor_payload.h" />
+    <Text Include="주의사항.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\encryptorcaps\x64\Debug\encryptorcaps.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Downloads\droppercaps-main\droppercaps-main\DropperTemplate\dropper.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\droppercaps-main\droppercaps-main\DropperTemplate\resource.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

